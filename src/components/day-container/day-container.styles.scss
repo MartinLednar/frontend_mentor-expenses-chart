@@ -1,0 +1,42 @@
+.day-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:hover .day-amount {
+    opacity: 1;
+  }
+
+  &:hover .day-column {
+    opacity: 0.65;
+  }
+
+  .day-amount {
+    max-width: 100%;
+    background-color: var(--dark-brown);
+    color: var(--pale-orange);
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0;
+  }
+
+  .day-column {
+    background-color: var(--red);
+    width: 48px;
+    border-radius: 5px;
+    margin: 6px 0 8px;
+
+    &.active {
+      background-color: var(--cyan);
+    }
+  }
+
+  & h3 {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--medium-brown);
+  }
+}
