@@ -43,6 +43,7 @@
   border-radius: 15px;
   padding: 28px 30px;
   margin-top: 25px;
+  min-width: 300px;
 }
 
 .overview-container h1 {
@@ -78,7 +79,4 @@
   .overview-container h1 {
     font-size: 28px;
   }
-}
-
-@media screen and (max-width: 420px) {
 }

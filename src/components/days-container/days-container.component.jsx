@@ -7,7 +7,7 @@ const DaysContainer = ({ daysData }) => {
   return (
     <div className="days-container">
       {daysData.map((day, i) => (
-        <DayContainer key={i} {...day} isActive={currentDay - 1 === i} />
+        <DayContainer key={i} {...day} isActive={currentDay === day.id} />
       ))}
     </div>
   );

@@ -3,8 +3,7 @@ import "./App.css";
 //////////////Components//////////////
 import DaysContainer from "./components/days-container/days-container.component";
 //////////////Components//////////////
-
-import data from "./data.json";
+import daysData from "./data";
 
 function App() {
   return (
@@ -22,7 +21,7 @@ function App() {
         <div className="overview-container">
           <h1>Spending - Last 7 days</h1>
 
-          <DaysContainer daysData={data} />
+          <DaysContainer daysData={daysData} />
 
           <div className="footer-container">
             <div className="title-pair">
