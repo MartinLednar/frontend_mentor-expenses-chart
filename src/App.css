@@ -45,14 +45,14 @@
   margin-top: 25px;
 }
 
-.overview-container h2 {
-  font-size: 35px;
+.overview-container h1 {
+  font-size: 30px;
 }
 
 /*------------Footer Container----------*/
 .footer-container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   margin-top: 30px;
 }
@@ -63,8 +63,22 @@
   font-size: 18px;
 }
 
+.footer-container .title-pair h2 {
+  font-weight: 700;
+  font-size: 38px;
+}
+
 .title-pair.reverse {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
+}
+
+@media screen and (max-width: 505px) {
+  .overview-container h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 420px) {
 }
